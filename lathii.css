@@ -1,0 +1,95 @@
+p{
+    color:brown
+}
+
+p {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+/* p{
+    .text{
+    display: inline;
+    background-color: rgb(209, 209, 12);
+}
+} */
+.text{
+    display: block;
+    width: 200px;
+    background-color: rgb(239, 86, 15);
+}
+.text1{
+    display: inline;
+    background-color: rgb(209, 209, 12);
+}
+.text2{
+    display: inline-block;
+    background-color: rgb(15, 239, 86);
+}
+.text3{
+    display: none;
+    background-color: rgb(15, 86, 239);
+}
+.container{
+    display: flex;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 2px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.container1{
+    display: flex;
+    height: 500px;
+    width: 500px;
+    align-items: center;
+}
+.container2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container4{
+    display: flex;
+    gap: 20px;
+}
+h1{
+  color:firebrick
+}
+h1:hover{
+  color:blue
+}
+.btn{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: 5px solid black;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: red;
+    transform: scale(1.1);
+}
+.img:hover{
+    transform: rotate(180deg);
+    transition: ease-in-out 10s;
+} 
+@media (min-width: 768px) {
+    .container{
+        flex-direction: column;
+        background-color: rgb(154, 225, 154);
+    }
+    .box{
+        background-color: lightcoral;
+    }
+}
